@@ -50,6 +50,27 @@ document.getElementById('resetHistory').addEventListener('click', () => {
 });
 
 
+// Copy Number Button
+const clipboardCount = document.getElementById('clipboardCount');
+let totalCopyCount = 0;
+document.querySelectorAll('.copyNumberBtn').forEach(btn => {
+ btn.addEventListener('click', () => {
+   const sTrim = btn.closest('.card').querySelector('.agencyNumber').textContent.trim();
+
+
+   navigator.clipboard.writeText(sTrim).then(() => {
+     alert(`Copied Number ${sTrim}`);
+     clipboardCount.textContent = ++totalCopyCount;
+   });
+ });
+});
+
+
+
+
+
+
+
 
 
 
