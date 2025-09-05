@@ -40,8 +40,8 @@
 # 5. What is the difference between preventDefault() and stopPropagation() methods?
    a. **preventDefault()** → Prevents the browser from performing its default action. 
    Example:
-   ```html
-   <a href="https://example.com" id="link">Go to Example</a>
+   
+   <a href="https://nusrat.com" id="link"> Example</a>
 
 
    b. stopPropagation() → Stops an event from bubbling up or capturing, preventing parent listeners from being triggered.
