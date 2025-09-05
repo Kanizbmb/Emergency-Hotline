@@ -44,6 +44,12 @@ dialButtons.forEach((btn, i) => {
    `);
  });
 });
+// Clear History
+document.getElementById('resetHistory').addEventListener('click', () => {
+ document.getElementById('historyList').innerHTML = "";
+});
+
+
 
 
 
